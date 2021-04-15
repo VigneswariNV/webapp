@@ -1,0 +1,25 @@
+{
+  "name": "webap",
+  "version": "1.0.0",
+  "description": "font-family: SourceSans Pro\r max-fontsize:22px\r basic font color: white with opacity 0.6\r button color:background-image: linear-gradient(to right, #6b69f9, #6f6eff)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0",
+    "node-sass": "^5.0.0"
+  },
+  "dependencies": {
+    "browser-sync": "^2.26.14",
+    "browsersync": "*",
+    "cssnano": "^5.0.1",
+    "gulp-postcss": "^9.0.0",
+    "gulp-terser": "^2.0.1",
+    "node": "^14.0.0"
+  }
+}
