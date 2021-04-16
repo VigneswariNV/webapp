@@ -4,15 +4,58 @@
 .display-f{
  display:flex;
 }
+.display-n{
+    display:none;
+}
 .float-l{
     float:left;
 }
 .float-r{
     float:right;
 }
-.body{
-    font-family:$font-family;
+body{
+    font-family:$primary-font;
 }
 .white{
     color:white;
+}
+.white-blur{
+    color:$link-white;
+}
+.blue-bg{
+    background-color:$blue;
+}
+.red-bg{
+    background-color:$bright-orange;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:content-box;
+}
+.container{
+    max-width:1400px;
+    margin:0 auto;
+    height:100vh;
+}
+a{
+    text-decoration: none;
+    color:$link-white;
+}
+.top-p{
+    margin-top:15px;
+}
+.lh{
+    &-list{
+        @include lineheight(1.29);
+    }
+    &-normal{
+        @include lineheight(0.71);
+    }
+
+}
+
+ul{
+    list-style-type: none;
 }

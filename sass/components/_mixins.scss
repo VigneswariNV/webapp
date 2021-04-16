@@ -1,0 +1,36 @@
+@mixin radius($border){
+    border-radius:$border;
+}
+@mixin width($width){
+    width:$width;
+}
+@mixin w-h($value,$height:auto){
+    width:$value;
+    height:$height;
+
+}
+
+@mixin border($width,$value,$color){
+    border-bottom:$width $value $color;
+}
+
+@mixin borderline($width,$value,$color){
+    border:$width $value $color;
+}
+@mixin size($pixel,$height: $pixel/2,$border:$height/2){
+    width:$pixel;
+    height:$height;
+    border-radius:$border;
+}
+@mixin togglesize($value,$width:$value,$border:$value/2){
+    height:$value;
+    width:$width;
+    border-radius:$border;
+}
+
+@mixin lineheight($value){
+    line-height:$value;
+}
+@mixin spacing($value){
+    letter-spacing:$value;
+}

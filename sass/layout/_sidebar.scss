@@ -1,4 +1,78 @@
 .sidenav{
-    background-color:$black;
-    width:280px;
+   @include width(280px);
+    background:$black;
+   
+   
+    div{
+        @include border(1px,solid,$border-white);
+    }
+    .header{
+        padding:20px 0 22px 35px;
+        @include lineheight(0.83);
+        p{
+            @include spacing(1px);
+        }
+    }
+    .sidebar{
+        padding:30px 30px 20px 30px;
+        ul{
+            
+            li{
+                    margin-top:15px;
+                    ul{
+                       padding-left:20px;
+                       padding-bottom:30px;
+                    p{
+                        @include lineheight(0.71);
+                        padding-top:5px;
+                        padding-left:40px;
+                        margin-top:30px;
+                    }
+                }
+        
+            }
+        }
+
+    }
+    .section{
+       padding:20px 0 20px 20px;
+        span{
+            padding-left:16px;
+        }
+    }
+    .footer{
+        padding:130px 30px 30px 30px;
+
+        .toggle{
+            cursor: pointer;
+            @include size(40px);
+            input:checked ~ .toggle__fill{
+                background:$white-opa ;
+            }
+
+            .toggle__fill{
+                position:relative;
+                background:$white;
+                @include size(40px);
+                transition:background 0.2s;
+                @include borderline(1px,solid,$border-white);
+            }
+            .toggle__fill::after{
+                content:"";
+                position:absolute;
+                top:0;
+                left:0;
+                @include togglesize(20px);
+                background:$blue;
+                box-shadow: 0 0 12px 0 rgba(111, 110, 255, 0.5);
+                transition:transform 0.2s;
+            }
+            input:checked ~ .toggle__fill::after{
+                transform:translateX(20px);
+            }
+
+        }
+          
+    }
+    
 }

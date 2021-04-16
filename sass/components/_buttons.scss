@@ -1,3 +1,17 @@
+button{
+    border:none;
+    margin-left:5px;
+}
+
 .secondary-button{
-    background-color: ;
+    background-color: $white-opa;
+    padding: 4px 8px;
+    @include radius(3px);
+   
+}
+.profile-button{
+    padding: 3px 8px 3px 3px;
+    @include radius(5px);
+    @include lineheight(0.77);
+    background-color:$button-white;
 }

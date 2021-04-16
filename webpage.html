@@ -1,17 +1,113 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
-        <link href="dist/webpage.css" rel="stylesheet">
-    </head>
 
-    <body>
-        <div class="sidenav">
-            <img class="float-l"src="logo.png" alt="logo">
-            <p class="font-xsmall display-ib white">UPROAR</p>
-            <a class="display-ib" href="javascript.void(0)">beta</a> 
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet'>
+    <link href="dist/webpage.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidenav display-ib">
+            <div class="header ">
+                <img class="float-l" src="images/logo.png" alt="logo">
+                <p class="font-xsmall font-bold top-p display-ib white">UPROAR</p>
+                <button class="display-ib font-xsmall white font-bold top-p secondary-button">beta</button>
+            </div>
+
+            <div class="sidebar">
+                <ul>
+                    <li class="font-medium font-bold white">GAMES</li>
+                    <li class="font-medium white">Categories
+                        <ul class="white-blur">
+                            <li><img class="float-l " src="dist/combined-shape.svg" alt="action">
+                                <p>Action</p>
+                            </li>
+                            <li><img class="float-l " src="dist/adventure.svg" alt="adventure">
+                                <p>Adventure</p>
+                            </li>
+                            <li><img class="float-l " src="dist/casual.svg" alt="casual">
+                                <p>Casual</p>
+                            </li>
+                            <li><img class="float-l " src="dist/strategy.svg" alt="strategy">
+                                <p>Strategy</p>
+                            </li>
+                            <li><img class="float-l " src="dist/int.svg" alt="intellectual">
+                                <p>Intellectual</p>
+                            </li>
+                            <li><img class="float-l " src="dist/sport.svg" alt="sport">
+                                <p>Sport</p>
+                            </li>
+                        </ul>
+
+                    </li>
+                    <li class="font-medium white lh-list">Recommended</li>
+                    <li class="font-medium white lh-list">New!</li>
+                    <li class="font-medium white lh-list">Most Played</li>
+                </ul>
+            </div>
+
+            <div class="white section">
+                <img src="dist/my_games.svg">
+                <span class="font-medium font-bold">My games</span>
+            </div>
+
+            <div class="footer white-blur">
+                <p class="lh-list font-medium display-ib ">Dark mode</p>
+                <label class="toggle float-r" for="toggle">
+                    <input class="display-n" type="checkbox" id="toggle">
+                    <p class="toggle__fill "></p>
+
+                </label>
+            </div>
+
         </div>
-    </body>
+
+        <div class="main float-r">
+            <div class="header-main display-f">
+                <nav>
+                    <ul class="font-medium display-ib">
+                        <li class="display-ib"><a class="lh-list " href="javascript.void(0)">FAQ</a></li>
+                        <li class="display-ib"><a class="lh-list " href="javascript.void(0)">About</a></li>
+                        <li class="display-ib"><a class="lh-list " href="javascript.void(0)">Support</a></li>
+                    </ul>
+                    <div class="selection display-ib">
+                        <img src="images/flag.jpg">
+                        <select class="lh-normal font-medium" name="languages" id="language">
+                            <option value="English">Eng</option>
+                            <option value="Tamil">Tam</option>
+                            <option value="Telugu">Tel</option>
+                            <option value="Hindi">Hin</option>
+                        </select>
+                    </div>
+                </nav>
+
+                <div class="profile ">
+                    <a class="profile-button display-ib button" href="javascript.void(0)">
+                        <img class="blue-bg display-ib" src="dist/logo.svg">
+                        <span class="font-bold font-small white">650</span>
+                        <span class="plus">+</span>
+                    </a>
+
+                    <a class="profile-button display-ib button" href="javascript.void(0)">
+                        <img class="red-bg" src="dist/icon.svg">
+                        <span class="font-bold font-small white">1200</span>
+                        <span class="white-blur font-x">+5/hour</span>
+                    </a>
+                    <img src="images/avatar.jpg" alt="person">
+                    <div class="details display-ib">
+                        <p class="name lh-normal white">Jeremy Manning</p>
+                        <p class="status ">Online</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</body>
+
 </html>

@@ -1,0 +1,53 @@
+.main{
+    background-color:$black;
+    @include width(1069px);
+    height:832px;
+
+    .header-main{
+        padding:20px 45px 22px 55px;
+        justify-content: space-between;
+        @include border(1px,solid,$border-white);
+    nav{
+       
+        ul{
+            border-right:$border-white;
+            li{
+                padding-right:10px;
+            }
+        }
+        select{
+            background-color:inherit;
+            color:$white;
+            option{
+                background-color:inherit;
+
+            }
+        } 
+    }
+
+    .profile{
+        a{
+            span{
+                padding-left:10px;
+            }
+           
+        }
+        img{
+            padding: 3px 5px 3px 6px;
+            border-radius: 4px;
+        }
+
+        .details{
+            .status{
+                color:$green;
+            }
+            p.status::before{
+                width: 6px;
+                height: 6px;
+                background-color:$green;
+            }
+        }
+    }
+}
+
+}
