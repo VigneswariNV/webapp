@@ -28,6 +28,10 @@ body{
 .red-bg{
     background-color:$bright-orange;
 }
+.img-bg{
+    padding: 3px 5px 3px 6px;
+    border-radius: 4px;
+}
 
 *{
     margin:0;
@@ -37,7 +41,7 @@ body{
 .container{
     max-width:1400px;
     margin:0 auto;
-    height:100vh;
+    background-color:$black;
 }
 a{
     text-decoration: none;
@@ -46,16 +50,14 @@ a{
 .top-p{
     margin-top:15px;
 }
-.lh{
-    &-list{
-        @include lineheight(1.29);
-    }
-    &-normal{
-        @include lineheight(0.71);
-    }
+.height{
+    height:95px;
+   }
 
-}
-
+.border{
+    @include border(1px,solid,$border-white);
+   }
+   
 ul{
     list-style-type: none;
 }

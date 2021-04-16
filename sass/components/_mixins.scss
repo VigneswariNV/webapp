@@ -4,7 +4,7 @@
 @mixin width($width){
     width:$width;
 }
-@mixin w-h($value,$height:auto){
+@mixin w-h($value,$height:$value){
     width:$value;
     height:$height;
 

@@ -1,13 +1,12 @@
 .sidenav{
    @include width(280px);
-    background:$black;
-   
-   
+   background-color: rgba(156, 165, 236, 0.04);
+
     div{
         @include border(1px,solid,$border-white);
     }
     .header{
-        padding:20px 0 22px 35px;
+        padding:20px 0 30px 35px;
         @include lineheight(0.83);
         p{
             @include spacing(1px);

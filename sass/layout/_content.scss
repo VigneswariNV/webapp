@@ -1,0 +1,33 @@
+.content{
+    padding: 40px 55px 57px 55px;
+    h2{
+        padding-top:9px;
+    }
+    
+.slide{
+    margin-top:25px;
+    .element{
+       @include width(255px);
+       background-color:$card;
+       @include radius(6px);
+
+       img{
+           border-radius:6px 6px 0 0;
+       }
+      
+       .division{
+           padding:15px;
+           
+           p{
+               margin-top:10px;
+           }
+           span{
+               margin-right:10px;
+               margin-left:10px;
+           }
+           
+       }
+      
+    }
+}
+}

@@ -1,10 +1,9 @@
 .main{
-    background-color:$black;
     @include width(1069px);
-    height:832px;
+    height:840px;
 
     .header-main{
-        padding:20px 45px 22px 55px;
+        padding:30px 45px 9px 55px;
         justify-content: space-between;
         @include border(1px,solid,$border-white);
     nav{
@@ -12,7 +11,7 @@
         ul{
             border-right:$border-white;
             li{
-                padding-right:10px;
+                padding-right:30px;
             }
         }
         select{
@@ -32,19 +31,26 @@
             }
            
         }
-        img{
-            padding: 3px 5px 3px 6px;
-            border-radius: 4px;
+        .person{
+            @include w-h(42px);
         }
 
         .details{
+            width:180px;
+            img{
+                padding-right:10px;
+            }
+            p{
+                padding-top:5px;
+            }
             .status{
                 color:$green;
             }
             p.status::before{
-                width: 6px;
-                height: 6px;
+                content:".";
+                @include w-h(1000px);
                 background-color:$green;
+                border-radius:50%;
             }
         }
     }

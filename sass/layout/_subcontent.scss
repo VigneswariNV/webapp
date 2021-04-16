@@ -1,0 +1,24 @@
+.sub-content{
+    padding: 0 55px 57px 55px;
+   
+    .sub-element{
+        margin-top:30px;
+        @include width(255px);
+        background-color:$card;
+        .sub-img{
+            margin-top:-30px;
+            margin-left:10px;
+        }
+        .sub-division{
+            padding:15px;
+            p{
+                margin-top:10px;
+            }
+
+            span{
+                margin-right:10px;
+                margin-left:10px;
+            }
+        }
+    }
+}

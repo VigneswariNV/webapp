@@ -24,3 +24,19 @@
         font-weight:600;
     }
 }
+
+.lh{
+    &-list{
+        @include lineheight(1.29);
+    }
+    &-normal{
+        @include lineheight(0.71);
+    }
+    &-medium{
+        @include lineheight(0.77);
+    }
+    &-high{
+        @include lineheight(1.29);
+    }
+
+}
