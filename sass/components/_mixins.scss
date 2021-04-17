@@ -34,3 +34,12 @@
 @mixin spacing($value){
     letter-spacing:$value;
 }
+
+@function text-color($bg-color){
+    @if (lightness($bg-color)>70){
+        @return $black;
+    }
+    @else {
+        @return $white;
+    }
+}

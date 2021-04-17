@@ -1,10 +1,6 @@
 .sidenav{
    @include width(280px);
-   background-color: rgba(156, 165, 236, 0.04);
 
-    div{
-        @include border(1px,solid,$border-white);
-    }
     .header{
         padding:20px 0 30px 35px;
         @include lineheight(0.83);
@@ -40,7 +36,7 @@
         }
     }
     .footer{
-        padding:130px 30px 30px 30px;
+        padding:140px 30px 30px 30px;
 
         .toggle{
             cursor: pointer;
@@ -54,7 +50,7 @@
                 background:$white;
                 @include size(40px);
                 transition:background 0.2s;
-                @include borderline(1px,solid,$border-white);
+               
             }
             .toggle__fill::after{
                 content:"";

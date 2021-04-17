@@ -1,0 +1,64 @@
+body{
+    background-color:$white;
+    color:text-color($white);
+    font-family:$primary-font;
+    .secondary-button,.button{
+        background-color:$blue;
+    }
+    .list-color{
+        color:#292828;
+    }
+    .sidenav{
+        background-color:#e9e7e7;
+        div{
+            @include border(1px,solid,#b4b2b2);
+        }
+    }
+    a{
+        color:#292828;
+    }
+    .element,.sub-element{
+        background-color:#e9e7e7;
+    }
+    .toggle__fill
+    {
+        @include borderline(1px,solid,#b4b2b2);
+    }
+ 
+    .border{
+        @include border(1px,solid,#b4b2b2);
+       }
+
+    
+}
+
+body.dark-theme {
+    background-color: $black;
+    color:text-color($black);
+
+    .secondary-button,.button{
+        background-color: $white-opa;
+    }
+    .list-color{
+        color:$link-white;
+    }
+    .sidenav{
+    background-color: rgba(156, 165, 236, 0.04);
+    div{
+        @include border(1px,solid,$border-white);
+    }
+    }
+    .element,.sub-element{
+       background-color: $card;
+    }
+    .toggle__fill
+    {
+        @include borderline(1px,solid,$border-white);
+    }
+    .border{
+        @include border(1px,solid,$border-white);
+       }
+    
+   
+  
+}

@@ -3,9 +3,8 @@
     height:840px;
 
     .header-main{
-        padding:30px 45px 9px 55px;
+        padding:30px 45px 15px 55px;
         justify-content: space-between;
-        @include border(1px,solid,$border-white);
     nav{
        
         ul{

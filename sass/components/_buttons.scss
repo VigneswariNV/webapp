@@ -11,7 +11,6 @@ button{
 }
 
 .secondary-button{
-    background-color: $white-opa;
     padding: 4px 8px;
     @include radius(3px);
 }
@@ -46,4 +45,18 @@ button{
 
 .buttons{
     margin-top:30px;
+}
+.action-btn{
+    @extend %primary-button;
+    padding: 4px 8px;
+}
+.abs-button{
+    position:absolute;
+    left:15px;
+    top:15px;
+}
+.subabs-btn{
+    position:absolute;
+    left:25px;
+    top:40px;
 }
