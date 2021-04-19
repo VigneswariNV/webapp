@@ -1,0 +1,38 @@
+.footer{
+    padding:140px 30px 30px 30px;
+    position:absolute;
+    bottom:0;
+
+    .toggle{
+        cursor: pointer;
+        @include size(40px);
+        margin-left:100px;
+        input:checked ~ .toggle__fill{
+            background:$white-opa ;
+        }
+
+        .toggle__fill{
+            position:relative;
+            background:$white;
+            @include size(40px);
+            transition:background 0.2s;
+           
+        }
+        .toggle__fill::after{
+            content:"";
+            position:absolute;
+            top:0;
+            left:0;
+            @include togglesize(20px);
+            background:$blue;
+            box-shadow: 0 0 12px 0 rgba(111, 110, 255, 0.5);
+            transition:transform 0.2s;
+        }
+        input:checked ~ .toggle__fill::after{
+            transform:translateX(20px);
+        }
+
+    }
+      
+}
+

@@ -1,4 +1,4 @@
-button{
+.button{
     border:none;
     margin-left:5px;
 }
@@ -33,9 +33,8 @@ button{
     padding: 8px 12px ;
     background-color:inherit;
     @include radius(4px);
-    @include borderline(1px, solid, $white-opa);
-    color:$white;
     margin-right:10px;
+    cursor:pointer;
 }
 .accept-btn{
     @extend %primary-button;
@@ -59,4 +58,36 @@ button{
     position:absolute;
     left:25px;
     top:40px;
+}
+.dropdown-btn{
+    padding:10px 0 10px 68px;
+    width:88%;
+    background-color:inherit;
+    margin-top:5px;
+    font-family:$primary-font;
+}
+.dropdown{
+    display:inline-block;
+    position:relative;
+    width:85%;
+}
+.drop-btn{
+    padding-left:40px;
+    background-color:inherit;
+    width:100%;
+    
+}
+.dropdown-content{
+    display:none;
+}
+//.dropdown:focus .dropdown-content{
+  // display:block;
+//}
+button{
+    outline:none;
+    cursor:pointer;
+    border:none;
+}
+.lang-button{
+    @include width(50px);
 }

@@ -15,41 +15,64 @@
             <div class="header ">
                 <img class="float-l" src="images/logo.png" alt="logo">
                 <p class="font-xsmall font-bold top-p display-ib ">UPROAR</p>
-                <button class="display-ib font-xsmall font-bold white top-p secondary-button">beta</button>
+                <button class=" button display-ib font-xsmall font-bold top-p secondary-button">beta</button>
             </div>
 
             <div class="sidebar">
                 <ul>
-                    <li class="font-medium font-bold ">GAMES</li>
-                    <li class="font-medium  ">My games</li>
-                    
+                    <li class="font-medium font-bold ">
+                        <p>GAMES</p>
+                    </li>
+                    <li class="font-medium  ">
+                        <p>My games</p>
+                    </li>
 
-                    <li class="font-medium ">Categories
-                        <ul >
-                            <li><img class="float-l " src="dist/combined-shape.svg" alt="action">
-                                <p class="list-color">Action</p>
-                            </li>
-                            <li><img class="float-l " src="dist/adventure.svg" alt="adventure">
-                                <p class="list-color">Adventure</p>
-                            </li>
-                            <li><img class="float-l " src="dist/casual.svg" alt="casual">
-                                <p class="list-color">Casual</p>
-                            </li>
-                            <li><img class="float-l " src="dist/strategy.svg" alt="strategy">
-                                <p class="list-color">Strategy</p>
-                            </li>
-                            <li><img class="float-l " src="dist/int.svg" alt="intellectual">
-                                <p class="list-color">Intellectual</p>
-                            </li>
-                            <li><img class="float-l " src="dist/sport.svg" alt="sport">
-                                <p class="list-color">Sport</p>
-                            </li>
-                        </ul>
+
+                    <li class="font-medium dropdown ">
+                        <button class="drop-btn ta-left">Categories
+                            <i class="arrow up"></i>
+                            <i class="arrow down"></i>
+                        </button>
+
+
+                        <nav class="dropdown-content">
+                            <button class="display-b dropdown-btn"><img class="float-l " src="dist/combined-shape.svg"
+                                    alt="action">
+                                <p class="list-color font-medium  ta-left">Action</p>
+                            </button>
+                            <button class="display-b dropdown-btn"><img class="float-l " src="dist/adventure.svg"
+                                    alt="adventure">
+                                <p class="list-color font-medium  ta-left">Adventure</p>
+                            </button>
+                            <button class="display-b dropdown-btn"><img class="float-l " src="dist/casual.svg"
+                                    alt="casual">
+                                <p class="list-color font-medium  ta-left">Casual</p>
+                            </button>
+                            <button class="display-b dropdown-btn"><img class="float-l " src="dist/strategy.svg"
+                                    alt="strategy">
+                                <p class="list-color font-medium  ta-left ">Strategy</p>
+                            </button>
+                            <button class="display-b dropdown-btn"><img class="float-l " src="dist/int.svg"
+                                    alt="intellectual">
+                                <p class="list-color font-medium  ta-left">Intellectual</p>
+                            </button>
+                            <button class="display-b dropdown-btn"><img class="float-l " src="dist/sport.svg"
+                                    alt="sport">
+                                <p class="list-color font-medium  ta-left">Sport</p>
+                            </button>
+                        </nav>
+
 
                     </li>
-                    <li class="font-medium  lh-list">Recommended</li>
-                    <li class="font-medium  lh-list">New!</li>
-                    <li class="font-medium  lh-list">Most Played</li>
+                    <li class="font-medium  lh-list">
+                        <p>Recommended</p>
+                    </li>
+                    <li class="font-medium  lh-list">
+                        <p>New!</p>
+                    </li>
+                    <li class="font-medium  lh-list">
+                        <p>Most Played</p>
+                    </li>
                 </ul>
             </div>
 
@@ -58,14 +81,14 @@
                 <span class="font-medium font-bold">My games</span>
             </div>
 
-            <div class="footer list-color ">
+            <footer class="footer list-color ">
                 <p class="lh-list font-medium display-ib ">Dark mode</p>
                 <label class="toggle float-r" for="toggle">
                     <input class="display-n" type="checkbox" id="toggle">
                     <p class="toggle__fill "></p>
 
                 </label>
-            </div>
+            </footer>
 
         </div>
 
@@ -78,13 +101,15 @@
                         <li class="display-ib"><a class="lh-list list-color " href="javascript.void(0)">Support</a></li>
                     </ul>
                     <div class="selection display-ib">
-                        <img src="images/flag.jpg">
-                        <select class="lh-normal font-medium" name="languages" id="language">
-                            <option value="English">Eng</option>
-                            <option value="Tamil">Tam</option>
-                            <option value="Telugu">Tel</option>
-                            <option value="Hindi">Hin</option>
-                        </select>
+                       
+                        <div class="lh-normal font-medium languages display-ib" >
+                            <button class="lang-button "> <img class="float-l" src="images/flag.jpg"><span >Eng</span><i class="arrow float-r down-btn"></i></button>
+                            <div class="lang-content">
+                            <a class="lang" href="javascript.void(0)">Tam</a>
+                            <a class="lang"  href="javascript.void(0)">Tel</a>
+                            <a class="lang"  href="javascript.void(0)">Hin</a>
+                            </div>
+                        </div>
                     </div>
                 </nav>
 
@@ -120,104 +145,97 @@
 
                 <div class="buttons float-r">
                     <a class="all-games-btn" href="javascript.void(0)">All games</a>
-                    <a class="arrow-btn" href="javascript.void(0)">&#60;</a>
-                    <a class="arrow-btn" href="javascript.void(0)">&#62;</a>
+                    <a class="arrow-btn " onclick="plusSlides(-1, 1)">&#60;</a>
+                    <a class="arrow-btn " onclick="plusSlides(1, 1)">&#62;</a>
                 </div>
 
                 <div class="slide">
-                    <div class="glide">
-                        <div class="glide__track" data-glide-el="track">
-                            <ul class="glide__slides">
-                                <li class="glide__slide">
-                                    <div class="element">
-                                        <div class="wrap">
-                                        <img src="images/game1.jpg" alt="game1">
-                                        <a class="action-btn abs-button font-xsmall font-bold" href="javascript.void(0)">Action</a>
-                                        </div>
-                                        <div class="division border height">
-                                            <h3 class="font-large font-bold">PUBG Mobile</h3>
-                                            <p class="list-color font-medium lh-high">Deal 5000 damage to enemies with
-                                                grenades.</p>
-                                        </div>
 
-                                        <div class="division">
-                                            <img class="blue-bg img-bg display-ib" src="dist/logo.svg">
-                                            <span class="font-small  lh-medium">+100</span>
-                                            <img class="red-bg img-bg" src="dist/icon.svg">
-                                            <span class="font-small  lh-medium">-300</span>
-                                            <button class="accept-btn font-small">Accept</button>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="glide__slide">
-                                    <div class="element">
-                                        <div class="wrap">
-                                            <img src="images/game2.png" alt="game2">
-                                            <a class="action-btn abs-button font-xsmall font-bold" href="javascript.void(0)">Action</a>
-                                            </div>
-                                        <div class="division border height">
-                                            <h3 class="font-large font-bold ">Mayhem Combat</h3>
-                                            <p class="list-color font-medium lh-high">Win 10 games per character Mike.
-                                            </p>
-                                        </div>
+                    <div class="element">
+                        <div class="wrap">
+                            <img src="images/game1.jpg" alt="game1">
+                            <a class="action-btn abs-button font-xsmall font-bold" href="javascript.void(0)">Action</a>
+                        </div>
+                        <div class="division border height">
+                            <h3 class="font-large font-bold">PUBG Mobile</h3>
+                            <p class="list-color font-medium lh-high">Deal 5000 damage to enemies with
+                                grenades.</p>
+                        </div>
 
-                                        <div class="division">
-                                            <img class="blue-bg img-bg display-ib" src="dist/logo.svg">
-                                            <span class="font-small  lh-medium">+75</span>
-                                            <img class="red-bg img-bg" src="dist/icon.svg">
-                                            <span class="font-small  lh-medium">-200</span>
-                                            <button class="accept-btn font-small">Accept</button>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="glide__slide">
-                                    <div class="element">
-                                        <div class="wrap">
-                                            <img src="images/game3.jpg" alt="game3">
-                                            <a class="action-btn abs-button font-xsmall font-bold" href="javascript.void(0)">Action</a>
-                                        </div>
-                                        <div class="division border height">
-                                            <h3 class="font-large font-bold ">Burrito Bison: Launcha Libre</h3>
-                                            <p class="list-color font-medium lh-high">Earn 10,000 сoins.</p>
-                                        </div>
-
-                                        <div class="division">
-                                            <img class="blue-bg img-bg display-ib" src="dist/logo.svg">
-                                            <span class="font-small  lh-medium">+150</span>
-                                            <img class="red-bg img-bg" src="dist/icon.svg">
-                                            <span class="font-small  lh-medium">-400</span>
-                                            <button class="accept-btn font-small">Accept</button>
-                                        </div>
-
-                                    </div>
-                                </li>
-                                <li class="glide__slide">
-                                    <div class="element">
-                                        <div class="wrap">
-                                            <img src="images/game4.png" alt="game4">
-                                            <a class="action-btn abs-button font-xsmall font-bold" href="javascript.void(0)">Action</a>
-                                        </div>
-                                        <div class="division border height">
-                                            <h3 class="font-large font-bold ">Battlelands Royale</h3>
-                                            <p class="list-color font-medium lh-high">Eliminate 10 opponents.</p>
-                                        </div>
-
-                                        <div class="division">
-                                            <img class="blue-bg img-bg display-ib" src="dist/logo.svg">
-                                            <span class="font-small  lh-medium">+100</span>
-                                            <img class="red-bg img-bg" src="dist/icon.svg">
-                                            <span class="font-small  lh-medium">-300</span>
-                                            <button class="accept-btn font-small">Accept</button>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
+                        <div class="division">
+                            <img class="blue-bg img-bg display-ib" src="dist/logo.svg">
+                            <span class="font-small  lh-medium">+100</span>
+                            <img class="red-bg img-bg" src="dist/icon.svg">
+                            <span class="font-small  lh-medium">-300</span>
+                            <button class="button accept-btn font-small">Accept</button>
                         </div>
                     </div>
+
+                    <div class="element">
+                        <div class="wrap">
+                            <img src="images/game2.png" alt="game2">
+                            <a class="action-btn abs-button font-xsmall font-bold" href="javascript.void(0)">Action</a>
+                        </div>
+                        <div class="division border height">
+                            <h3 class="font-large font-bold ">Mayhem Combat</h3>
+                            <p class="list-color font-medium lh-high">Win 10 games per character Mike.
+                            </p>
+                        </div>
+
+                        <div class="division">
+                            <img class="blue-bg img-bg display-ib" src="dist/logo.svg">
+                            <span class="font-small  lh-medium">+75</span>
+                            <img class="red-bg img-bg" src="dist/icon.svg">
+                            <span class="font-small  lh-medium">-200</span>
+                            <button class="button accept-btn font-small">Accept</button>
+                        </div>
+                    </div>
+
+                    <div class="element">
+                        <div class="wrap">
+                            <img src="images/game3.jpg" alt="game3">
+                            <a class="action-btn abs-button font-xsmall font-bold" href="javascript.void(0)">Action</a>
+                        </div>
+                        <div class="division border height">
+                            <h3 class="font-large font-bold ">Burrito Bison: Launcha Libre</h3>
+                            <p class="list-color font-medium lh-high">Earn 10,000 сoins.</p>
+                        </div>
+
+                        <div class="division">
+                            <img class="blue-bg img-bg display-ib" src="dist/logo.svg">
+                            <span class="font-small  lh-medium">+150</span>
+                            <img class="red-bg img-bg" src="dist/icon.svg">
+                            <span class="font-small  lh-medium">-400</span>
+                            <button class="button accept-btn font-small">Accept</button>
+                        </div>
+
+                    </div>
+
+                    <div class="element">
+                        <div class="wrap">
+                            <img src="images/game4.png" alt="game4">
+                            <a class="action-btn abs-button font-xsmall font-bold" href="javascript.void(0)">Action</a>
+                        </div>
+                        <div class="division border height">
+                            <h3 class="font-large font-bold ">Battlelands Royale</h3>
+                            <p class="list-color font-medium lh-high">Eliminate 10 opponents.</p>
+                        </div>
+
+                        <div class="division">
+                            <img class="blue-bg img-bg display-ib" src="dist/logo.svg">
+                            <span class="font-small  lh-medium">+100</span>
+                            <img class="red-bg img-bg" src="dist/icon.svg">
+                            <span class="font-small  lh-medium">-300</span>
+                            <button class="button accept-btn font-small">Accept</button>
+                        </div>
+                    </div>
+
 
                 </div>
 
             </div>
+
+
 
 
             <div class="sub-content">
@@ -228,116 +246,125 @@
 
                 <div class="buttons float-r">
                     <a class="all-games-btn" href="javascript.void(0)">All games</a>
-                    <a class="arrow-btn" href="javascript.void(0)">&#60;</a>
-                    <a class="arrow-btn" href="javascript.void(0)">&#62;</a>
+                    <a class="arrow-btn " onclick="plusSlides(-1, 1)">&#60;</a>
+                    <a class="arrow-btn " onclick="plusSlides(1, 1)">&#62;</a>
                 </div>
 
                 <div class="sub-slide">
-                    <div class="glide">
-                        <div class="glide__track" data-glide-el="track">
-                            <ul class="glide__slides">
-                                <li class="glide__slide">
-                                    <div class="sub-element ">
 
-                                        <div class="sub-division height  border">
-                                            <img class="sub-img float-l" src="images/game5.png" alt="game5">
-                                            <a class="action-btn subabs-btn font-xsmall font-bold" href="javascript.void(0)">Action</a>
-                                            <h3 class="font-large font-bold  ">Star Knight</h3>
-                                            <p class="list-color font-medium lh-high ">Earn 10,000 сoins.</p>
 
-                                        </div>
+                    <div class="sub-element ">
 
-                                        <div class="sub-division">
-                                            <img class="blue-bg img-bg display-ib" src="dist/logo.svg">
-                                            <span class="font-small  lh-medium">+50</span>
-                                            <img class="red-bg img-bg" src="dist/icon.svg">
-                                            <span class="font-small  lh-medium">-100</span>
-                                            <button class="accept-btn font-small">Accept</button>
-                                        </div>
+                        <div class="sub-division height  border">
+                            <img class="sub-img float-l" src="images/game5.png" alt="game5">
+                            <a class="action-btn subabs-btn font-xsmall font-bold" href="javascript.void(0)">Action</a>
+                            <h3 class="font-large font-bold  ">Star Knight</h3>
+                            <p class="list-color font-medium lh-high  ">Earn 10,000 сoins.</p>
 
-                                    </div>
-                                </li>
-                                <li class="glide__slide">
-                                    <div class="sub-element">
-
-                                        <div class="sub-division height border">
-                                            <img class="sub-img" src="images/game6.png" alt="game6">
-                                            <a class="action-btn subabs-btn font-xsmall font-bold" href="javascript.void(0)">Action</a>
-                                            <h3 class="font-large font-bold ">Star Knight</h3>
-                                            <p class="list-color font-medium lh-high">Earn 10,000 сoins.</p>
-                                        </div>
-
-                                        <div class="sub-division">
-                                            <img class="blue-bg img-bg display-ib" src="dist/logo.svg">
-                                            <span class="font-small lh-medium">+50</span>
-                                            <img class="red-bg img-bg" src="dist/icon.svg">
-                                            <span class="font-small  lh-medium">-100</span>
-                                            <button class="accept-btn font-small">Accept</button>
-                                        </div>
-
-                                    </div>
-                                </li>
-                                <li class="glide__slide">
-                                    <div class="sub-element">
-                                        
-                                        <div class="sub-division height border">
-                                            <img class="sub-img" src="images/game7.png" alt="game7">
-                                            <a class="action-btn subabs-btn font-xsmall font-bold" href="javascript.void(0)">Action</a>
-                                            <h3 class="font-large font-bold ">Star Knight</h3>
-                                            <p class="list-color font-medium lh-high">Earn 10,000 сoins.</p>
-                                        </div>
-                                        <div class="sub-division">
-                                            <img class="blue-bg img-bg display-ib" src="dist/logo.svg">
-                                            <span class="font-small  lh-medium">+50</span>
-                                            <img class="red-bg img-bg" src="dist/icon.svg">
-                                            <span class="font-small  lh-medium">-100</span>
-                                            <button class="accept-btn font-small">Accept</button>
-                                        </div>
-
-                                    </div>
-                                </li>
-
-                                <li class="glide__slide">
-                                    <div class="sub-element">
-        
-                                        <div class="sub-division height border">
-                                            <img class="sub-img" src="images/game8.png" alt="game8">
-                                            <a class="action-btn subabs-btn font-xsmall font-bold" href="javascript.void(0)">Action</a>
-                                            <h3 class="font-large font-bold">Star Knight</h3>
-                                            <p class="list-color font-medium lh-high">Earn 10,000 сoins.</p>
-                                        </div>
-
-                                        <div class="sub-division">
-                                            <img class="blue-bg img-bg display-ib" src="dist/logo.svg">
-                                            <span class="font-small  lh-medium">+50</span>
-                                            <img class="red-bg img-bg" src="dist/icon.svg">
-                                            <span class="font-small  lh-medium">-100</span>
-                                            <button class="accept-btn font-small">Accept</button>
-                                        </div>
-
-                                    </div>
-                                </li>
-                            </ul>
                         </div>
-                    </div>
-                </div>
 
+                        <div class="sub-division">
+                            <img class="blue-bg img-bg display-ib" src="dist/logo.svg">
+                            <span class="font-small  lh-medium">+50</span>
+                            <img class="red-bg img-bg" src="dist/icon.svg">
+                            <span class="font-small  lh-medium">-100</span>
+                            <button class=" button accept-btn font-small">Accept</button>
+                        </div>
+
+                    </div>
+
+                    <div class="sub-element">
+
+                        <div class="sub-division height border">
+                            <img class="sub-img float-l" src="images/game6.png" alt="game6">
+                            <a class="action-btn subabs-btn font-xsmall font-bold" href="javascript.void(0)">Action</a>
+                            <h3 class="font-large font-bold ">Talking Tom Gol…</h3>
+                            <p class="list-color font-medium lh-high ">Run 20,000 meters</p>
+                        </div>
+
+                        <div class="sub-division">
+                            <img class="blue-bg img-bg display-ib" src="dist/logo.svg">
+                            <span class="font-small lh-medium">+50</span>
+                            <img class="red-bg img-bg" src="dist/icon.svg">
+                            <span class="font-small  lh-medium">-100</span>
+                            <button class="button accept-btn font-small">Accept</button>
+                        </div>
+
+                    </div>
+
+                    <div class="sub-element">
+
+                        <div class="sub-division height border">
+                            <img class="sub-img float-l" src="images/game7.png" alt="game7">
+                            <a class="action-btn subabs-btn font-xsmall font-bold" href="javascript.void(0)">Action</a>
+                            <h3 class="font-large font-bold ">Guns of Boom</h3>
+                            <p class="list-color font-medium lh-high ">Eliminate 10 opponents from sniper rifle.</p>
+                        </div>
+                        <div class="sub-division">
+                            <img class="blue-bg img-bg display-ib" src="dist/logo.svg">
+                            <span class="font-small  lh-medium">+50</span>
+                            <img class="red-bg img-bg" src="dist/icon.svg">
+                            <span class="font-small  lh-medium">-100</span>
+                            <button class="button accept-btn font-small">Accept</button>
+                        </div>
+
+                    </div>
+
+                    <div class="sub-element">
+
+                        <div class="sub-division height border">
+                            <img class="sub-img float-l" src="images/game8.png" alt="game8">
+                            <a class="action-btn subabs-btn font-xsmall font-bold" href="javascript.void(0)">Action</a>
+                            <h3 class="font-large font-bold">Shadow Fight 2</h3>
+                            <p class="list-color font-medium lh-high ">Defeat your opponent without special moves.</p>
+                        </div>
+
+                        <div class="sub-division">
+                            <img class="blue-bg img-bg display-ib" src="dist/logo.svg">
+                            <span class="font-small  lh-medium">+50</span>
+                            <img class="red-bg img-bg" src="dist/icon.svg">
+                            <span class="font-small  lh-medium">-100</span>
+                            <button class="button accept-btn font-small">Accept</button>
+                        </div>
+
+                    </div>
+
+
+                </div>
             </div>
 
         </div>
+
     </div>
 
 
     <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
     <script src="webap.js"></script>
     <script>
-        new Glide('.glide', {
-            type: 'carousel',
-            focusAt: 0,
-            perView: 3,
-            gap: 5,
-            autoplay:2000,
-        }).mount()
+        //const gl1 = new Glide('#g1', {
+            //type: 'carousel',
+            //focusAt: 0,
+            //perView: 3,
+            //gap: 5,
+            //autoplay:2000,
+        //})
+
+        //const gl2 = new Glide('#g2', {
+            //type: 'carousel',
+            //focusAt: 0,
+            //perView: 3,
+            //gap: 5,
+            //autoplay:2000,
+        //})
+
+        //gl1.mount();
+        //gl2.mount();
+
+        //gl1.on('run', (e) => {
+                //gl2.go(e.direction);
+            //})
+
+
     </script>
 </body>
 

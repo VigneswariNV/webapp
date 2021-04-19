@@ -1,10 +1,13 @@
 body{
     background-color:$white;
-    color:text-color($white);
+    color:black;
     font-family:$primary-font;
-    .secondary-button,.button{
+
+    .secondary-button{
         background-color:$blue;
+        color:white;
     }
+  
     .list-color{
         color:#292828;
     }
@@ -14,13 +17,14 @@ body{
             @include border(1px,solid,#b4b2b2);
         }
     }
-    a{
+    a,.arrow-btn{
         color:#292828;
     }
-    .element,.sub-element{
+    .element,.sub-element,.button,.lang-content,.lang-button{
+       
         background-color:#e9e7e7;
     }
-    .toggle__fill
+    .toggle__fill,.arrow-btn
     {
         @include borderline(1px,solid,#b4b2b2);
     }
@@ -28,13 +32,20 @@ body{
     .border{
         @include border(1px,solid,#b4b2b2);
        }
-
+    .dropdown-btn:focus{
+        background-color:#c7c2c2;
+        border-left:2px solid $blue;
+    }
+    .arrow{
+        border-color: black;
+        border-style:solid;
+    }
     
 }
 
 body.dark-theme {
     background-color: $black;
-    color:text-color($black);
+    color:white;
 
     .secondary-button,.button{
         background-color: $white-opa;
@@ -48,16 +59,27 @@ body.dark-theme {
         @include border(1px,solid,$border-white);
     }
     }
-    .element,.sub-element{
+    .element,.sub-element,.lang-content,.lang-button{
        background-color: $card;
     }
-    .toggle__fill
+    .toggle__fill,.arrow-btn
     {
         @include borderline(1px,solid,$border-white);
     }
     .border{
         @include border(1px,solid,$border-white);
        }
+    a,.arrow-btn,.drop-btn{
+        color:white;
+    }
+    .dropdown-btn:focus{
+        background-color:$card;
+        border-left:2px solid $blue;
+    }
+    .arrow{
+        border-color: white;
+        border-style:solid;
+    }
     
    
   

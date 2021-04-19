@@ -1,6 +1,6 @@
 .main{
     @include width(1069px);
-    height:840px;
+    height:855px;
 
     .header-main{
         padding:30px 45px 15px 55px;
@@ -13,14 +13,23 @@
                 padding-right:30px;
             }
         }
-        select{
-            background-color:inherit;
-            color:$white;
-            option{
-                background-color:inherit;
-
-            }
-        } 
+        .lang{
+            padding:10px;
+            display:block;
+            @include width(50px);
+        }
+        .lang-content{
+            display:none;
+            position:absolute;
+            z-index: 1;
+            font-family:$primary-font;
+        }
+       .languages{
+        position: relative;
+       }
+       .languages:hover .lang-content{
+           display:block;
+       }
     }
 
     .profile{
