@@ -27,14 +27,12 @@
     width:$width;
     border-radius:$border;
 }
-
 @mixin lineheight($value){
     line-height:$value;
 }
 @mixin spacing($value){
     letter-spacing:$value;
 }
-
 @function text-color($bg-color){
     @if (lightness($bg-color)>70){
         @return $black;

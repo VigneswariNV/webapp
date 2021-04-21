@@ -1,67 +1,11 @@
 .main{
-    @include width(1069px);
-    height:855px;
-
-    .header-main{
-        padding:30px 45px 15px 55px;
-        justify-content: space-between;
-    nav{
-       
-        ul{
-            border-right:$border-white;
-            li{
-                padding-right:30px;
-            }
-        }
-        .lang{
-            padding:10px;
-            display:block;
-            @include width(50px);
-        }
-        .lang-content{
-            display:none;
-            position:absolute;
-            z-index: 1;
-            font-family:$primary-font;
-        }
-       .languages{
-        position: relative;
-       }
-       .languages:hover .lang-content{
-           display:block;
-       }
-    }
-
-    .profile{
-        a{
-            span{
-                padding-left:10px;
-            }
-           
-        }
-        .person{
-            @include w-h(42px);
-        }
-
-        .details{
-            width:180px;
-            img{
-                padding-right:10px;
-            }
-            p{
-                padding-top:5px;
-            }
-            .status{
-                color:$green;
-            }
-            p.status::before{
-                content:".";
-                @include w-h(1000px);
-                background-color:$green;
-                border-radius:50%;
-            }
-        }
-    }
+    //@include width(1069px);
+    flex:7.8;
+    //height:855px;
+    height:auto;
+    overflow-y:scroll;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: none;
 }
-
-}
+   
+  

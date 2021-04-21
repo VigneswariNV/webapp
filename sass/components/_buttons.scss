@@ -19,6 +19,7 @@
     @include radius(5px);
     @include lineheight(0.77);
     background-color:$button-white;
+    margin-right:10px;
 }
 .pro-btn{
     @extend %primary-button;
@@ -75,7 +76,6 @@
     padding-left:40px;
     background-color:inherit;
     width:100%;
-    
 }
 .dropdown-content{
     display:none;
@@ -89,5 +89,9 @@ button{
     border:none;
 }
 .lang-button{
-    @include width(50px);
+    @include width(55px);
+    img{
+        @include w-h(14px);
+        margin-right:5px;
+    }
 }

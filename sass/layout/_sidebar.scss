@@ -1,15 +1,14 @@
 .sidenav{
-   @include width(280px);
-   height:855px;
+   //@include width(280px);
+   flex:2;
+  height:855px;
+   height:auto;
    position:relative;
-
-    .header{
-        padding:20px 0 30px 35px;
-        @include lineheight(0.83);
-        p{
-            @include spacing(1px);
-        }
-    }
+   overflow-y:scroll;
+   overflow-x:hidden;
+   -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: none;
+   
     .sidebar{
         padding:30px 0 20px 0;
         ul{
@@ -26,8 +25,6 @@
                         margin-top:20px;
                         margin-bottom:25px;
                     }
-                
-        
             }
         }
 

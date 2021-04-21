@@ -2,6 +2,8 @@ body{
     background-color:$white;
     color:black;
     font-family:$primary-font;
+    box-sizing:border-box;
+    overflow:hidden;
 
     .secondary-button{
         background-color:$blue;
@@ -17,10 +19,11 @@ body{
             @include border(1px,solid,#b4b2b2);
         }
     }
-    a,.arrow-btn{
+    a,.arrow-btn,span{
         color:#292828;
+        font-family:$primary-font;
     }
-    .element,.sub-element,.button,.lang-content,.lang-button{
+    .element,.sub-element,.button,.lang-content,.lang-button,.header{
        
         background-color:#e9e7e7;
     }
@@ -29,16 +32,25 @@ body{
         @include borderline(1px,solid,#b4b2b2);
     }
  
-    .border{
+    .border,header{
         @include border(1px,solid,#b4b2b2);
        }
     .dropdown-btn:focus{
         background-color:#c7c2c2;
         border-left:2px solid $blue;
     }
+    .dropdown-btn:focus svg{
+        fill:$blue;
+    }
     .arrow{
         border-color: black;
         border-style:solid;
+    }
+    svg{
+        fill:#292828;
+    }
+    .down-btn{
+        border-top:5px solid black;
     }
     
 }
@@ -66,11 +78,12 @@ body.dark-theme {
     {
         @include borderline(1px,solid,$border-white);
     }
-    .border{
+    .border,header{
         @include border(1px,solid,$border-white);
        }
-    a,.arrow-btn,.drop-btn{
+    a,.arrow-btn,.drop-btn,span{
         color:white;
+        font-family:$primary-font;
     }
     .dropdown-btn:focus{
         background-color:$card;
@@ -80,7 +93,15 @@ body.dark-theme {
         border-color: white;
         border-style:solid;
     }
-    
+    svg{
+        fill:white;
+    }
+    .down-btn{
+        border-top:5px solid white;
+    }
+    .header{
+        background-color: rgba(156, 165, 236, 0.04);
+    }
    
   
 }
