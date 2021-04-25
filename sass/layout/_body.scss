@@ -1,20 +1,19 @@
 body{
     background-color:$white;
     color:black;
-    font-family:$primary-font;
     box-sizing:border-box;
     overflow:hidden;
-
+    font-family:$primary-font;
     .secondary-button{
         background-color:$blue;
         color:white;
     }
-  
     .list-color{
         color:#292828;
     }
     .sidenav{
         background-color:#e9e7e7;
+        font-family:$primary-font;
         div{
             @include border(1px,solid,#b4b2b2);
         }
@@ -58,6 +57,7 @@ body{
 body.dark-theme {
     background-color: $black;
     color:white;
+    font-family:$primary-font;
 
     .secondary-button,.button{
         background-color: $white-opa;

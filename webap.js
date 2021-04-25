@@ -1,7 +1,32 @@
 const toggle = document.getElementById('toggle');
 const body = document.body;
 
-toggle.addEventListener('input', e => {
+/* toggle.checked=false;
+function clickHandler(){
+    if(this.checked){
+        body.classList.remove("light-theme");
+        body.classList.add("dark-theme");
+        localStorage.setItem("theme","dark-theme");
+    }else{
+        body.classList.add("light-theme");
+        body.classList.remove("dark-theme");
+        localStorage.setItem("theme","light-theme");
+    }
+}
+toggle.addEventListener("click",clickHandler);
+
+window.onload=checkTheme();
+function checkTheme(){
+    const localStorageTheme = localStorage.getItem("theme");
+    if(localStorageTheme !== null && localStorageTheme === "dark"){
+        document.body.className=localStorageTheme;
+
+        const themeSwitch=document.getElementById('toggle');
+        themeSwitch.checked=true;
+    }
+}
+ */
+ toggle.addEventListener('input', e => {
     const isChecked = e.target.checked;
 
     if (isChecked) {
@@ -9,7 +34,7 @@ toggle.addEventListener('input', e => {
     } else {
         body.classList.remove('dark-theme');
     }
-});
+}); 
 
 
 //var slideIndex = [1,1];
@@ -138,3 +163,40 @@ subrightButton.addEventListener("click", function() {
 
     }
 })
+
+
+//function add(){
+    //let num1=parseInt(document.getElementById("Element").querySelector("#gblue").innerHTML);
+    //let num2=parseInt(document.getElementById("Element").querySelector("#gred").innerHTML);
+
+    //let num3=parseInt(document.getElementById("blue").innerHTML);
+    //let num4=parseInt(document.getElementById("red").innerHTML);
+
+    //document.getElementById("blue").innerHTML= num1+num3; 
+    //document.getElementById("red").innerHTML= num2+num4; 
+
+//}
+//function add1(){
+    //let num1=parseInt(document.getElementById("g2blue").innerHTML);
+    //let num2=parseInt(document.getElementById("g2red").innerHTML);
+
+    //let num3=parseInt(document.getElementById("blue").innerHTML);
+    //let num4=parseInt(document.getElementById("red").innerHTML);
+
+    //document.getElementById("blue").innerHTML= num1+num3; 
+    //document.getElementById("red").innerHTML= num2+num4; 
+
+//} 
+
+
+$(document).ready(function add(){
+    let num1=parseInt(document.getElementById("g2blue").innerHTML);
+    let num2=parseInt(document.getElementById("g2red").innerHTML);
+
+    let num3=parseInt(document.getElementById("blue").innerHTML);
+    let num4=parseInt(document.getElementById("red").innerHTML);
+    
+    
+    $("button").closest("span",num1).document.getElementById("blue").innerHTML= num1+num3; 
+    $("button").closest("span",num1).document.getElementById("red").innerHTML= num2+num4; 
+});

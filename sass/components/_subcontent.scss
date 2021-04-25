@@ -24,9 +24,15 @@
             margin-right:20px;
         }
         .sub-division{
-        padding:10px 10px 15px 15px;
+            padding:10px 10px 15px 15px;
             position:relative;
-
+            a{
+                padding: 4px 8px;
+            }
+            button{
+                padding: 10px  15px;
+                margin-left:10px;
+               }
             .inner-div{
                 @include width(140px);
             }

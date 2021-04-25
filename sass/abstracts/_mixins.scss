@@ -7,13 +7,10 @@
 @mixin w-h($value,$height:$value){
     width:$value;
     height:$height;
-
 }
-
 @mixin border($width,$value,$color){
     border-bottom:$width $value $color;
 }
-
 @mixin borderline($width,$value,$color){
     border:$width $value $color;
 }
@@ -33,11 +30,15 @@
 @mixin spacing($value){
     letter-spacing:$value;
 }
-@function text-color($bg-color){
-    @if (lightness($bg-color)>70){
-        @return $black;
-    }
-    @else {
-        @return $white;
-    }
+@mixin transform($value){
+    transform: rotate($value);
+    -webkit-transform: rotate($value);
 }
+//@function text-color($bg-color){
+ //   @if (lightness($bg-color)>70){
+  //      @return $black;
+   // }
+    //@else {
+    //    @return $white;
+    //}
+//}

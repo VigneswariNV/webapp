@@ -2,14 +2,12 @@
     border:none;
     margin-left:5px;
 }
-
-%primary-button{
+.primary-button{
     background-image: $button-background;
     color:$white;
     @include radius(4px);
     box-shadow: 0 0 12px 0 rgba(111, 110, 255, 0.5);
 }
-
 .secondary-button{
     padding: 4px 8px;
     @include radius(3px);
@@ -17,19 +15,10 @@
 .profile-button{
     padding: 3px 8px 3px 3px;
     @include radius(5px);
-    @include lineheight(0.77);
     background-color:$button-white;
     margin-right:10px;
 }
-.pro-btn{
-    @extend %primary-button;
-    padding: 2px 9px 2px 10px;
-}
-.all-games-btn{
-    @extend %primary-button;
-    padding: 8px 17px 7px 18px;
-    margin-right:10px;
-}
+
 .arrow-btn{
     padding: 8px 12px ;
     background-color:inherit;
@@ -37,18 +26,8 @@
     margin-right:10px;
     cursor:pointer;
 }
-.accept-btn{
-    @extend %primary-button;
-    padding: 10px  15px;
-    margin-left:10px;
-}
-
 .buttons{
     margin-top:30px;
-}
-.action-btn{
-    @extend %primary-button;
-    padding: 4px 8px;
 }
 .abs-button{
     position:absolute;
@@ -80,13 +59,11 @@
 .dropdown-content{
     display:none;
 }
-//.dropdown:focus .dropdown-content{
-  // display:block;
-//}
 button{
     outline:none;
     cursor:pointer;
     border:none;
+    font-family:$primary-font;
 }
 .lang-button{
     @include width(55px);

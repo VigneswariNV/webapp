@@ -40,26 +40,26 @@
                         </div>
                     </nav>
 
-                    <div class="profile ">
-                        <a class="profile-button float-l button" href="javascript.void(0)">
-                            <img class="blue-bg img-bg float-l" src="dist/logo.svg">
-                            <span class="font-bold font-small  ">650</span>
+                    <div class="profile display-f">
+                        <a class="profile-button display-f ai-center  button" href="javascript.void(0)">
+                            <img class="blue-bg img-bg " src="dist/logo.svg">
+                            <span class="font-bold font-small  " id="blue" value="650">650</span>
                             <span class="plus ">+</span>
                         </a>
 
-                        <a class="profile-button float-l button" href="javascript.void(0)">
-                            <img class="red-bg img-bg float-l" src="dist/icon.svg">
-                            <span class="font-bold font-small  ">1200</span>
+                        <a class="profile-button  display-f ai-center button" href="javascript.void(0)">
+                            <img class="red-bg img-bg " src="dist/icon.svg">
+                            <span class="font-bold font-small  " id="red" value="1200">1200</span>
                             <span class=" font-bold font-x">+5/hour</span>
                         </a>
 
-                        <div class="details float-l">
+                        <div class="details ">
                             <img class="person float-l" src="images/avatar.jpg" alt="person">
                             <p class="name font-bold font-medium  lh-normal ">Jeremy Manning</p>
                             <p class="status font-bold font-small ">Online</p>
                         </div>
 
-                        <a class="pro-btn font-bold font-x" href="javascript.void(0)">PRO</a>
+                        <a class="primary-button a-padding font-bold font-x" href="javascript.void(0)">PRO</a>
                     </div>
 
                 </div>
@@ -178,7 +178,7 @@
                 </div>
 
                 <div class="buttons float-r">
-                    <a class="all-games-btn" href="javascript.void(0)">All games</a>
+                    <a class="primary-button" href="javascript.void(0)">All games</a>
                     <a class="arrow-btn  " data-action="slideRight"><i class="arrow left"></i></a>
                     <a class="arrow-btn " data-action="slideLeft"><i class="arrow right"></i></a>
                 </div>
@@ -186,10 +186,10 @@
                 <div class="wrapper">
                     <div class="slide" data-target="slide">
 
-                        <div class="element display-ib" data-target="element">
+                        <div id="Element" class="element display-ib" data-target="element">
                             <div class="wrap">
                                 <img class="img-game" src="images/game1.jpg" alt="game1">
-                                <a class="action-btn abs-button font-xsmall font-bold"
+                                <a class="primary-button abs-button font-xsmall font-bold"
                                     href="javascript.void(0)">Action</a>
                             </div>
                             <div class="division border height">
@@ -200,17 +200,17 @@
 
                             <div class="division display-f ai-center">
                                 <img class="blue-bg img-bg " src="dist/logo.svg">
-                                <span class="font-small  lh-medium">+100</span>
+                                <span class="font-small  lh-medium" id="gblue" >+100</span>
                                 <img class="red-bg img-bg" src="dist/icon.svg">
-                                <span class="font-small  lh-medium">-300</span>
-                                <button class="button accept-btn font-small">Accept</button>
+                                <span class="font-small  lh-medium" id="gred" >-300</span>
+                                <button class="button primary-button font-bold font-small" onClick="add()">Accept</button>
                             </div>
                         </div>
 
-                        <div class="element display-ib" data-target="element">
+                        <div id="Element" class="element display-ib" data-target="element">
                             <div class="wrap">
                                 <img class="img-game" src="images/game2.png" alt="game2">
-                                <a class="action-btn abs-button font-xsmall font-bold"
+                                <a class=" primary-button abs-button font-xsmall font-bold"
                                     href="javascript.void(0)">Action</a>
                             </div>
                             <div class="division border height">
@@ -221,17 +221,17 @@
 
                             <div class="division display-f ai-center">
                                 <img class="blue-bg img-bg " src="dist/logo.svg">
-                                <span class="font-small  lh-medium">+75</span>
+                                <span class="font-small  lh-medium" id="gblue" >+75</span>
                                 <img class="red-bg img-bg" src="dist/icon.svg">
-                                <span class="font-small  lh-medium">-200</span>
-                                <button class="button accept-btn font-small">Accept</button>
+                                <span class="font-small  lh-medium" id="gred">-200</span>
+                                <button class="button primary-button font-bold font-small" onClick="add()">Accept</button>
                             </div>
                         </div>
 
                         <div class="element display-ib" data-target="element">
                             <div class="wrap">
                                 <img class="img-game" src="images/game3.jpg" alt="game3">
-                                <a class="action-btn abs-button font-xsmall font-bold"
+                                <a class="primary-button abs-button font-xsmall font-bold"
                                     href="javascript.void(0)">Action</a>
                             </div>
                             <div class="division border height">
@@ -241,10 +241,10 @@
 
                             <div class="division display-f ai-center">
                                 <img class="blue-bg img-bg display-ib" src="dist/logo.svg">
-                                <span class="font-small  lh-medium">+150</span>
+                                <span class="font-small  lh-medium" id="g3blue">+150</span>
                                 <img class="red-bg img-bg" src="dist/icon.svg">
-                                <span class="font-small  lh-medium">-400</span>
-                                <button class="button accept-btn font-small">Accept</button>
+                                <span class="font-small  lh-medium" id="g3red">-400</span>
+                                <button class="button font-bold  primary-button font-small" onClick="add()">Accept</button>
                             </div>
 
                         </div>
@@ -252,7 +252,7 @@
                         <div class="element display-ib" data-target="element">
                             <div class="wrap">
                                 <img class="img-game" src="images/game4.png" alt="game4">
-                                <a class="action-btn abs-button font-xsmall font-bold"
+                                <a class="primary-button abs-button font-xsmall font-bold"
                                     href="javascript.void(0)">Action</a>
                             </div>
                             <div class="division border height">
@@ -262,17 +262,17 @@
 
                             <div class="division display-f ai-center">
                                 <img class="blue-bg img-bg display-ib" src="dist/logo.svg">
-                                <span class="font-small  lh-medium">+100</span>
+                                <span class="font-small  lh-medium" id="g1blue"  >+100</span>
                                 <img class="red-bg img-bg" src="dist/icon.svg">
-                                <span class="font-small  lh-medium">-300</span>
-                                <button class="button accept-btn font-small">Accept</button>
+                                <span class="font-small  lh-medium" id="g1red">-300</span>
+                                <button class="button font-bold primary-button font-small" onClick="add()">Accept</button>
                             </div>
                         </div>
 
                         <div class="element display-ib" data-target="element">
                             <div class="wrap">
                                 <img class="img-game" src="images/game1.jpg" alt="game1">
-                                <a class="action-btn abs-button font-xsmall font-bold"
+                                <a class="primary-button abs-button font-xsmall font-bold"
                                     href="javascript.void(0)">Action</a>
                             </div>
                             <div class="division border height">
@@ -283,17 +283,17 @@
 
                             <div class="division display-f ai-center">
                                 <img class="blue-bg img-bg " src="dist/logo.svg">
-                                <span class="font-small  lh-medium">+100</span>
+                                <span class="font-small  lh-medium" id="g1blue">+100</span>
                                 <img class="red-bg img-bg" src="dist/icon.svg">
-                                <span class="font-small  lh-medium">-300</span>
-                                <button class="button accept-btn font-small">Accept</button>
+                                <span class="font-small  lh-medium" id="g1red">-300</span>
+                                <button class="button font-bold primary-button font-small" onClick="add()">Accept</button>
                             </div>
                         </div>
 
                         <div class="element display-ib" data-target="element">
                             <div class="wrap">
                                 <img class="img-game" src="images/game1.jpg" alt="game1">
-                                <a class="action-btn abs-button font-xsmall font-bold"
+                                <a class="primary-button abs-button font-xsmall font-bold"
                                     href="javascript.void(0)">Action</a>
                             </div>
                             <div class="division border height">
@@ -304,10 +304,10 @@
 
                             <div class="division display-f ai-center">
                                 <img class="blue-bg img-bg " src="dist/logo.svg">
-                                <span class="font-small  lh-medium">+100</span>
+                                <span class="font-small  lh-medium" id="g1blue">+100</span>
                                 <img class="red-bg img-bg" src="dist/icon.svg">
-                                <span class="font-small  lh-medium">-300</span>
-                                <button class="button accept-btn font-small">Accept</button>
+                                <span class="font-small  lh-medium" id="g1red">-300</span>
+                                <button class="button font-bold primary-button font-small" onClick="add()">Accept</button>
                             </div>
                         </div>
 
@@ -337,7 +337,7 @@
 
                             <div class="sub-division height  border">
                                 <img class="sub-img float-l" src="images/game5.png" alt="game5">
-                                <a class="action-btn subabs-btn font-xsmall font-bold"
+                                <a class=" primary-button font-bold subabs-btn font-xsmall font-bold"
                                     href="javascript.void(0)">Action</a>
 
                                 <div class="display-ib inner-div">
@@ -352,7 +352,7 @@
                                 <span class="font-small  lh-medium">+50</span>
                                 <img class="red-bg img-bg" src="dist/icon.svg">
                                 <span class="font-small  lh-medium">-100</span>
-                                <button class=" button accept-btn font-small">Accept</button>
+                                <button class=" button font-bold primary-button font-small">Accept</button>
                             </div>
 
                         </div>
@@ -361,7 +361,7 @@
 
                             <div class="sub-division height border">
                                 <img class="sub-img float-l" src="images/game6.png" alt="game6">
-                                <a class="action-btn subabs-btn font-xsmall font-bold"
+                                <a class="primary-button subabs-btn font-xsmall font-bold"
                                     href="javascript.void(0)">Action</a>
 
                                 <div class="display-ib inner-div">
@@ -375,7 +375,7 @@
                                 <span class="font-small lh-medium">+50</span>
                                 <img class="red-bg img-bg" src="dist/icon.svg">
                                 <span class="font-small  lh-medium">-100</span>
-                                <button class="button accept-btn font-small">Accept</button>
+                                <button class="button font-bold primary-button font-small">Accept</button>
                             </div>
 
                         </div>
@@ -384,7 +384,7 @@
 
                             <div class="sub-division height border">
                                 <img class="sub-img float-l" src="images/game7.png" alt="game7">
-                                <a class="action-btn subabs-btn font-xsmall font-bold"
+                                <a class="primary-button subabs-btn font-xsmall font-bold"
                                     href="javascript.void(0)">Action</a>
 
                                 <div class="display-ib inner-div">
@@ -398,7 +398,7 @@
                                 <span class="font-small  lh-medium">+50</span>
                                 <img class="red-bg img-bg" src="dist/icon.svg">
                                 <span class="font-small  lh-medium">-100</span>
-                                <button class="button accept-btn font-small">Accept</button>
+                                <button class="button font-bold primary-button  font-small">Accept</button>
                             </div>
 
                         </div>
@@ -407,7 +407,7 @@
 
                             <div class="sub-division height border">
                                 <img class="sub-img float-l" src="images/game8.png" alt="game8">
-                                <a class="action-btn subabs-btn font-xsmall font-bold"
+                                <a class="primary-button subabs-btn font-xsmall font-bold"
                                     href="javascript.void(0)">Action</a>
 
                                 <div class="display-ib inner-div">
@@ -425,7 +425,7 @@
                                 <span class="font-small  lh-medium">+50</span>
                                 <img class="red-bg img-bg" src="dist/icon.svg">
                                 <span class="font-small  lh-medium">-100</span>
-                                <button class="button accept-btn font-small">Accept</button>
+                                <button class="button font-bold primary-button font-small">Accept</button>
                             </div>
 
                         </div>
@@ -434,7 +434,7 @@
 
                             <div class="sub-division height border">
                                 <img class="sub-img float-l" src="images/game6.png" alt="game6">
-                                <a class="action-btn subabs-btn font-xsmall font-bold"
+                                <a class="primary-button subabs-btn font-xsmall font-bold"
                                     href="javascript.void(0)">Action</a>
 
                                 <div class="display-ib inner-div">
@@ -448,7 +448,7 @@
                                 <span class="font-small lh-medium">+50</span>
                                 <img class="red-bg img-bg" src="dist/icon.svg">
                                 <span class="font-small  lh-medium">-100</span>
-                                <button class="button accept-btn font-small">Accept</button>
+                                <button class="button font-bold primary-button font-small">Accept</button>
                             </div>
 
                         </div>
@@ -466,6 +466,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
     <script src="webap.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
         //const gl1 = new Glide('#g1', {
             //type: 'carousel',

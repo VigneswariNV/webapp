@@ -1,7 +1,6 @@
-
-@import 'components/mixins';
-@import 'abstracts/typography';
 @import 'abstracts/variables';
+@import 'abstracts/mixins';
+@import 'abstracts/typography';
 @import 'layout/body';
 @import 'abstracts/utilities';
 @import 'components/buttons';
@@ -9,5 +8,5 @@
 @import 'layout/sidebar';
 @import 'layout/footer';
 @import 'layout/main';
-@import 'layout/content';
-@import 'layout/subcontent';
+@import 'components/content';
+@import 'components/subcontent';

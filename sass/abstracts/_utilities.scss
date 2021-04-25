@@ -29,7 +29,6 @@
     padding: 3px 5px 3px 6px;
     border-radius: 4px;
 }
-
 *{
     margin:0;
     padding:0;
@@ -42,9 +41,6 @@
 }
 a{
     text-decoration: none;
-}
-.top-p{
-    margin-top:15px;
 }
 .height{
     height:70px;
@@ -60,27 +56,22 @@ svg{
     border-width: 0 2px 2px 0;
     display: inline-block;
     padding: 3px;
-   
-  }
-  .right {
-    transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
+}
+.right {
+    @include transform(-45deg);
   }
   
   .left {
-    transform: rotate(135deg);
-    -webkit-transform: rotate(135deg);
+    @include transform(135deg);
   }
   .up {
-    transform: rotate(-135deg);
-    -webkit-transform: rotate(-135deg);
+    @include transform(-135deg);
     display:none;
     margin-left:120px;
   }
   
   .down {
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
+    @include transform(45deg);
     display:inline-block;
     margin-right:20px;
     margin-left:120px;
@@ -99,7 +90,7 @@ svg{
       align-items:center;
   }
 
-  .sidenav::-webkit-scrollbar,.main::-webkit-scrollbar{
+  .sidebar::-webkit-scrollbar,.main::-webkit-scrollbar{
       display:none;
   }
  
